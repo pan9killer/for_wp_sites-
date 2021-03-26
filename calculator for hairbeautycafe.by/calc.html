@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator for Hair</title>
+    <link rel="stylesheet" href="./calc.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css">
+</head>
+<body>
+    <div class="calcBox">
+        <div class="calc">
+            <h3>Волосы славянские <br /> стандарт <br /> 50см</h3>
+            <div class="work__price" id="hairWorkPrice"></div>
+            <p class="master__info">Цена включает волосы <br /> и работу мастера</p>
+            <p class="caps__info">Количество грамм:</p>
+            <div class="price__input"><button class="button__minus" onclick="hairCountLess('hairWorkPrice','hairCount')"><i class="fa fa-minus" aria-hidden="true"></i></i></button><span id="hairCount"></span><button class="button__plus" onclick="hairCountMore('hairWorkPrice','hairCount')" ><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+            <div class="order__button"><button>Заказать</button></div>
+        </div>
+        <div class="calc">
+            <h3>Волосы славянские <br /> люкс окрашенные <br /> 50см</h3>
+            <div class="work__price" id="hairWorkPrice1"></div>
+            <p class="master__info">Цена включает волосы <br /> и работу мастера</p>
+            <p class="caps__info">Количество грамм:</p>
+            <div class="price__input"><button class="button__minus" onclick="hairCountLess1('hairWorkPrice1','hairCount1')"><i class="fa fa-minus" aria-hidden="true"></i></i></button><span id="hairCount1"></span><button class="button__plus" onclick="hairCountMore1('hairWorkPrice1','hairCount1')" ><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+            <div class="order__button"><button>Заказать</button></div>
+        </div>
+        <div class="calc">
+            <h3>Волосы славянские <br /> люкс неокрашенные <br /> 50см</h3>
+            <div class="work__price" id="hairWorkPrice2"></div>
+            <p class="master__info">Цена включает волосы <br /> и работу мастера</p>
+            <p class="caps__info">Количество грамм:</p>
+            <div class="price__input"><button class="button__minus" onclick="hairCountLess2('hairWorkPrice2','hairCount2')"><i class="fa fa-minus" aria-hidden="true"></i></i></button><span id="hairCount2"></span><button class="button__plus" onclick="hairCountMore2('hairWorkPrice2','hairCount2')" ><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+            <div class="order__button"><button>Заказать</button></div>
+        </div>
+    </div>
+    <script src="./calc.js" ></script>
+</body>
+</html>
